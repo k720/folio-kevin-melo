@@ -40,6 +40,9 @@ body {
 .dark-theme .icon-custom{
 	color: white;
 }
+.dark-theme .toggle-icon{
+  color: white;
+}
 
 /* Estilos específicos para o tema claro */
 .light-theme {
@@ -73,6 +76,9 @@ body {
   color: #0e0e0e;
 }
 .light-theme .icon-custom{
+  color: black;
+}
+.light-theme .toggle-icon{
   color: black;
 }
 
