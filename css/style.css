@@ -1,10 +1,10 @@
 /* Estilos comuns a ambos os temas */
 body {
-	margin: 0;
-	justify-content: center;
-	align-items: center;
-	font-family: Arial, sans-serif;
-	position: relative;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  position: relative;
 }
 
 /* Estilos específicos para o tema escuro */
@@ -15,48 +15,47 @@ body {
   color: white;
 }
 .dark-theme h1, .dark-theme h2, .dark-theme h3 {
-	color: #f5f5f5;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #f5f5f5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.dark-theme a{
-	color: #f5f5f5;
-	text-decoration: underline;
+.dark-theme a {
+  color: #f5f5f5;
+  text-decoration: underline;
 }
 .dark-theme a:hover {
-	color: #f5f5f5;
-	text-decoration: underline;
+  color: #f5f5f5;
+  text-decoration: underline;
 }
 .dark-theme .navbar.blur {
-	background: rgba(0, 0, 0, 0.7) !important;
-	backdrop-filter: blur(10px);
-	transition: backdrop-filter 0.3s ease;
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(10px);
+  transition: backdrop-filter 0.3s ease;
 }
 .dark-theme .nav-link {
-	color: #f5f5f5;
+  color: #f5f5f5;
 }
 .dark-theme .fa-toggle-on {
-	color: #1f1f1f;
+  color: #1f1f1f;
 }
-.dark-theme .icon-custom{
-	color: white;
+.dark-theme .icon-custom {
+  color: white;
 }
-.dark-theme .toggle-icon{
+.dark-theme .toggle-icon {
   color: white;
 }
 
 /* Estilos específicos para o tema claro */
 .light-theme {
-	background: linear-gradient(120deg, #b3e0f2 0%, #9ef3d2 50%, #75c9ea 75%);
+  background: linear-gradient(120deg, #b3e0f2 0%, #9ef3d2 50%, #75c9ea 75%);
   background-size: 300% 300%;
   animation: gradientAnimation 10s ease infinite;
-	color: black;
+  color: black;
 }
 .light-theme h1, .light-theme h2, .light-theme h3 {
-	color: black;
-	text-shadow: none;
+  color: black;
+  text-shadow: none;
 }
-
-.light-theme a{
+.light-theme a {
   color: #0e0e0e;
   text-decoration: underline;
 }
@@ -75,10 +74,10 @@ body {
 .light-theme .fa-toggle-on {
   color: #0e0e0e;
 }
-.light-theme .icon-custom{
+.light-theme .icon-custom {
   color: black;
 }
-.light-theme .toggle-icon{
+.light-theme .toggle-icon {
   color: black;
 }
 
@@ -111,7 +110,6 @@ body::before {
   100% { transform: scaleX(0); }
 }
 
-
 /* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {
   width: 0;
@@ -122,9 +120,9 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: transparent; 
+  background-color: transparent;
   border-radius: 10px;
-  border: 2px solid transparent; 
+  border: 2px solid transparent;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -163,7 +161,7 @@ button:hover {
   background-color: transparent;
 }
 
-.intro-name{
+.intro-name {
   margin-bottom: 1rem;
 }
 
@@ -247,7 +245,7 @@ section#skill, section#contact {
   z-index: 2;
 }
 
-.card{
+.card {
   background-color: transparent;
   border: none;
   margin-bottom: 1rem;
@@ -262,4 +260,66 @@ section#skill, section#contact {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* Media queries para estilos responsivos */
+@media (max-width: 1200px) {
+  section#about, section#skill, section#contact {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro .intro-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .icon-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-caption {
+    font-size: 0.75rem;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .title-a {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    font-size: 0.9em;
+  }
+
+  .intro .intro-subtitle {
+    font-size: 1rem;
+  }
+
+  .intro-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-caption {
+    font-size: 0.6rem;
+  }
+
+  button {
+    padding: 6px 12px;
+  }
+
+  .title-a {
+    font-size: 2rem;
+  }
 }
